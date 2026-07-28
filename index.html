@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Reclaim: Earn Your Screen Time.">
+  <meta name="theme-color" content="#111411">
+  <title>Privacy Policy — Reclaim</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #111411;
+      --surface: #1a1f1a;
+      --surface-raised: #222822;
+      --text: #f3f6f1;
+      --muted: #aeb8ab;
+      --accent: #c7ff45;
+      --border: #343d33;
+      --content-width: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -20%, rgba(199, 255, 69, 0.12), transparent 36rem),
+        var(--background);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(calc(100% - 2rem), var(--content-width));
+      margin-inline: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.94rem;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    main { padding-block: clamp(3.5rem, 8vw, 6rem); }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.7rem, 9vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .lede {
+      max-width: 60ch;
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2.5vw, 1.25rem);
+    }
+
+    .updated {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      margin: 3rem 0;
+      padding: 1.35rem 1.4rem;
+      border: 1px solid rgba(199, 255, 69, 0.4);
+      border-radius: 16px;
+      background: rgba(199, 255, 69, 0.06);
+    }
+
+    .summary strong { color: var(--accent); }
+
+    section {
+      padding-block: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.35rem;
+      letter-spacing: -0.025em;
+    }
+
+    p { margin: 0.6rem 0; }
+
+    ul {
+      margin: 0.7rem 0;
+      padding-left: 1.3rem;
+    }
+
+    li + li { margin-top: 0.65rem; }
+
+    strong { color: var(--text); }
+
+    footer {
+      padding-block: 2rem 3rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 520px) {
+      header { align-items: flex-start; }
+      nav { gap: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://ostermaneric.github.io/reclaim-support/">Reclaim</a>
+    <nav aria-label="Site navigation">
+      <a href="https://ostermaneric.github.io/reclaim-privacy/" aria-current="page">Privacy</a>
+      <a href="https://ostermaneric.github.io/reclaim-support/">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Reclaim: Earn Your Screen Time</p>
+    <h1>Privacy Policy</h1>
+    <p class="lede">
+      Reclaim is built to help you trade intentional activity for screen time. This policy
+      explains what the app handles, what leaves your device, and the choices you have.
+    </p>
+    <p class="updated">Effective and last updated: July 27, 2026</p>
+
+    <div class="summary">
+      <strong>The short version:</strong> Reclaim does not sell your data, show ads, or track
+      you across other companies' apps and websites. Raw Screen Time activity and raw HealthKit
+      samples stay on your device. A limited set of account and recovery data is stored in
+      Firebase so your account can work and eligible progress can be recovered.
+    </div>
+
+    <section>
+      <h2>Information Reclaim collects</h2>
+      <p>When you create or use a Reclaim account, the app may process:</p>
+      <ul>
+        <li>
+          <strong>Account information:</strong> your Firebase user ID, email address, optional
+          display name, sign-in provider, and account creation and update dates.
+        </li>
+        <li>
+          <strong>App progress and settings:</strong> wallet balance, wallet cap, earned and
+          spent minutes, intentional-pass totals, exchange-rule settings, Momentum status, and
+          daily or weekly progress summaries.
+        </li>
+        <li>
+          <strong>Regional information:</strong> your device's time-zone identifier, used to
+          place progress into the correct local day and week. Reclaim does not request or upload
+          GPS coordinates.
+        </li>
+        <li>
+          <strong>Limited recovery evidence:</strong> short-lived, hashed receipt identifiers;
+          a broad source such as walking, workout, Lichess, or intentional pass; the minute
+          adjustment; and its date. This helps restore earned time without awarding it twice.
+          Qualified Momentum day keys may also be stored for streak recovery.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Information that stays on your device</h2>
+      <p>Reclaim is designed so the most sensitive underlying activity is processed locally:</p>
+      <ul>
+        <li>
+          <strong>Screen Time:</strong> selected apps, websites, and categories; opaque Screen
+          Time tokens; and raw usage reports remain inside Apple's privacy-preserving Screen Time
+          system on your device.
+        </li>
+        <li>
+          <strong>Health and fitness:</strong> raw HealthKit samples, step counts, workout
+          details, routes, heart rate, and calories are not uploaded by Reclaim. Reclaim requests
+          read-only access and converts eligible activity into reward minutes on-device.
+        </li>
+        <li>
+          <strong>Lichess:</strong> your OAuth token is kept in the iOS Keychain. Detailed puzzle
+          data and activity are processed locally. If a Lichess activity creates a reward, only
+          the limited recovery evidence described above may be synced to Firebase.
+        </li>
+        <li>
+          <strong>Local ledger details:</strong> original provider identifiers and detailed
+          wallet descriptions are not uploaded.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How information is used</h2>
+      <p>Reclaim uses information only to provide app functionality, including to:</p>
+      <ul>
+        <li>authenticate your account and keep it secure;</li>
+        <li>calculate, display, sync, and recover your wallet and Momentum progress;</li>
+        <li>prevent the same activity from being rewarded more than once;</li>
+        <li>connect optional services you choose to enable; and</li>
+        <li>respond to support, privacy, and account-deletion requests.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Services Reclaim relies on</h2>
+      <p>
+        Reclaim shares limited information with service providers only when needed to operate
+        the app:
+      </p>
+      <ul>
+        <li>
+          <strong>Google Firebase:</strong> Firebase Authentication manages sign-in, and Cloud
+          Firestore stores account, summary, and recovery data. Data is associated with your
+          Firebase user ID. Learn more in
+          <a href="https://firebase.google.com/support/privacy/">Firebase's privacy information</a>.
+        </li>
+        <li>
+          <strong>Apple:</strong> Reclaim uses Apple services such as Sign in with Apple,
+          HealthKit, Screen Time APIs, and TestFlight. Apple's handling of information is governed
+          by the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Lichess:</strong> if you choose to connect Lichess, Reclaim communicates
+          directly with Lichess to access account and puzzle activity using the permission you
+          grant. See the <a href="https://lichess.org/privacy">Lichess Privacy Policy</a>.
+        </li>
+      </ul>
+      <p>Reclaim does not use advertising SDKs or third-party analytics services.</p>
+    </section>
+
+    <section>
+      <h2>Tracking, advertising, and sale of data</h2>
+      <p>
+        Reclaim does not track you across apps or websites owned by other companies, does not
+        serve targeted advertising, and does not sell or rent personal information.
+      </p>
+    </section>
+
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>
+        Cloud account, summary, recovery, and Momentum data is retained while your Reclaim
+        account is active. The detailed recovery-receipt window is limited to approximately
+        eight days. Local data remains on your device until you delete the account, reset the app,
+        or remove the app, subject to iOS behavior.
+      </p>
+      <p>
+        You can delete your Reclaim account in the app from <strong>Settings → Account → Delete
+        Account</strong>. This deletes Reclaim's Firebase account data and authentication account
+        after any required recent sign-in. If you cannot access the app, contact
+        <a href="mailto:ejosterman@gmail.com?subject=Reclaim%20Account%20Deletion">ejosterman@gmail.com</a>.
+        Deleting Reclaim does not delete accounts or information held independently by Apple,
+        Lichess, or another service.
+      </p>
+      <p>
+        Service providers may retain limited security, fraud-prevention, or operational records
+        as required by law or under their own policies.
+      </p>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>
+        Reclaim uses platform protections including authenticated, user-scoped Firebase access,
+        Apple's Keychain for the Lichess token, and Apple's privacy-preserving Screen Time
+        framework. No method of transmission or storage is completely secure, but the app limits
+        what it sends off-device and uses reasonable safeguards for the information it handles.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>
+        Reclaim is not directed to children under 13, and the developer does not knowingly
+        collect personal information from children under 13. If you believe a child has provided
+        personal information, contact the developer so it can be addressed.
+      </p>
+    </section>
+
+    <section>
+      <h2>International processing</h2>
+      <p>
+        Reclaim's service providers may process information in the United States and other
+        countries where they operate. Their data-protection laws may differ from those in your
+        country.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>
+        This policy may be updated when Reclaim's features or data practices change. The updated
+        date at the top of this page will identify the current version. Material changes will be
+        communicated through an appropriate channel when required.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, requests, or concerns, email
+        <a href="mailto:ejosterman@gmail.com?subject=Reclaim%20Privacy">ejosterman@gmail.com</a>.
+        For app help, visit the
+        <a href="https://ostermaneric.github.io/reclaim-support/">Reclaim Support page</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Reclaim. Earn your time back.
+  </footer>
+</body>
+</html>
